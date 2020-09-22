@@ -89,6 +89,7 @@ body {
   color: white;
   text-align: center;
   width: 100%;
+  letter-spacing: 1px;
 }
 
 .work-title {
@@ -106,9 +107,10 @@ body {
 }
 
 .profile-section > p {
-  font-size: 17px;
   margin: 3px;
   line-height: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .profile-title {
