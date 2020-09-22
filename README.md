@@ -8,6 +8,6 @@ You can make your portfolio such https://yoshikai.net
 ## LICENSE
 MIT LICENSE
 
-I am very happy if you indicate my credit on your portfolio site when you use this.
+I am very happy if you indicate my credit on your portfolio site when you use this template.
 
 このテンプレートを使った時に、私のクレジットを表示して頂けたら、とても嬉しいです😊
