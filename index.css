@@ -80,22 +80,32 @@ body {
 }
 
 .work-detail {
+  letter-spacing: 1px!important;
   position: absolute;
   display:none;
-  top: 0;
+  top: 14px;
   left: 0;
-  padding: 3px;
+  padding: 0px 3px 3px 3px;
   font-size: 12px;
   color: white;
   text-align: center;
   width: 100%;
-  letter-spacing: 1px;
 }
 
 .work-title {
   font-size: 16px;
   font-weight: bold;
   color: white;
+  letter-spacing: 2px!important;
+  margin-bottom: 14px;
+}
+
+.work-detail p {
+  letter-spacing: 1px!important;
+  color: white;
+  padding-top: 0;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 
@@ -107,13 +117,18 @@ body {
 }
 
 .profile-section > p {
-  margin: 3px;
-  line-height: 30px;
   font-size: 14px;
-  letter-spacing: 1px;
+  margin: 3px;
+  line-height: 28px;
+  letter-spacing: 1px!important;
 }
 
 .profile-title {
   margin-top: 40px!important;
   font-weight: bold;
+}
+
+.read-more {
+  text-decoration: underline!important;
+  letter-spacing: 0px!important;
 }
