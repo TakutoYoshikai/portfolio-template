@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-template",
+  "version": "1.0.0",
+  "description": "A design template of Takuto Yoshikai's portfolio.",
+  "main": "index.template.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakutoYoshikai/portfolio-template.git"
+  },
+  "keywords": [],
+  "author": "Takuto Yoshikai <takuto.yoshikai@gmail.com> (https://yoshikai.net/en)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TakutoYoshikai/portfolio-template/issues"
+  },
+  "homepage": "https://github.com/TakutoYoshikai/portfolio-template#readme"
+}

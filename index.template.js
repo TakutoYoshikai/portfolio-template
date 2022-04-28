@@ -8,7 +8,7 @@ const sliceByNumber = (array, number) => {
 };
 
 function generate(name, job, works, schools, skills, email) {
-  let template = fs.readFileSync("./index.template.html", "utf8");
+  let template = fs.readFileSync(__dirname + "/index.template.html", "utf8");
   template = template.replace("#{NAME}", name);
   template = template.replace("#{JOB}", job);
   template = template.replace("#{WORKS}", sliceByNumber(works.map(work => {
@@ -45,6 +45,6 @@ function generate(name, job, works, schools, skills, email) {
   fs.writeFileSync("./index.html", template);
 }
 
-generate("takuto", "hacker", [], [], [], "takuto@yoshikai.net");
+module.exports = generate;
 
 
