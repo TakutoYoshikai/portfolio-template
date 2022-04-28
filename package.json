@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/TakutoYoshikai/portfolio-template/issues"
   },
-  "homepage": "https://github.com/TakutoYoshikai/portfolio-template#readme"
+  "homepage": "https://github.com/TakutoYoshikai/portfolio-template#readme",
+  "dependencies": {
+    "mkdirp": "^1.0.4"
+  }
 }

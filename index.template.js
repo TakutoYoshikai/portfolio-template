@@ -1,4 +1,5 @@
 const fs = require("fs");
+const mkdirp = require("mkdirp");
 
 const sliceByNumber = (array, number) => {
   const length = Math.ceil(array.length / number)
@@ -7,7 +8,7 @@ const sliceByNumber = (array, number) => {
   )
 };
 
-function generate(name, job, works, schools, skills, email) {
+async function generate(name, job, works, schools, skills, email) {
   let template = fs.readFileSync(__dirname + "/index.template.html", "utf8");
   template = template.replace("#{NAME}", name);
   template = template.replace("#{JOB}", job);
@@ -42,8 +43,12 @@ function generate(name, job, works, schools, skills, email) {
   }).join(""));
   template = template.replace("#{EMAIL}", email);
 
-  fs.writeFileSync("./index.html", template);
+  await mkdirp("./portfolio");
+  await mkdirp("./portfolio/images");
+  await fs.copyFileSync(__dirname + "/index.css", "./portfolio/index.css");
+  fs.writeFileSync("./portfolio/index.html", template);
 }
+
 
 module.exports = generate;
 
