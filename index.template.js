@@ -8,7 +8,7 @@ const sliceByNumber = (array, number) => {
   )
 };
 
-async function generate(name, job, works, schools, skills, email) {
+async function generate(name, job, works, schools, skills, email, output) {
   let template = fs.readFileSync(__dirname + "/index.template.html", "utf8");
   template = template.replace("#{NAME}", name);
   template = template.replace("#{JOB}", job);
@@ -43,10 +43,10 @@ async function generate(name, job, works, schools, skills, email) {
   }).join(""));
   template = template.replace("#{EMAIL}", email);
 
-  await mkdirp("./portfolio");
-  await mkdirp("./portfolio/images");
-  await fs.copyFileSync(__dirname + "/index.css", "./portfolio/index.css");
-  fs.writeFileSync("./portfolio/index.html", template);
+  await mkdirp(output + "/portfolio");
+  await mkdirp(output + "/portfolio/images");
+  await fs.copyFileSync(__dirname + "/index.css", output + "/portfolio/index.css");
+  fs.writeFileSync(output + "/portfolio/index.html", template);
 }
 
 
